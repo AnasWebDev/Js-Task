@@ -1,3 +1,4 @@
+
 var userInput = parseInt(prompt("Enter your birthdate month (1-12):"));
 
 var month;

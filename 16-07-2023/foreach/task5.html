@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anas Yasien</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    function vowelCount(str) {
+        // Convert the input string to lowercase to make it case-insensitive
+        const lowerCaseStr = str.toLowerCase();
+
+        // Initialize an empty object to store the vowel counts
+        const vowelCounts = {};
+
+        // Define a set of vowels
+        const vowels = ['a', 'e', 'i', 'o', 'u'];
+
+        // Loop through each character in the lowercase string
+        for (let char of lowerCaseStr) {
+            // If the character is a vowel and it's not already in the object, add it with a count of 1
+            if (vowels.includes(char) && !vowelCounts[char]) {
+                vowelCounts[char] = 1;
+            } else if (vowels.includes(char)) {
+                // If the character is a vowel and it's already in the object, increment its count by 1
+                vowelCounts[char]++;
+            }
+        }
+
+        // Return the object with vowel counts
+        return vowelCounts;
+    }
+
+    // Test Cases
+    console.log(vowelCount('Elie')); // Output: {e: 2, i: 1}
+    console.log(vowelCount('Tim')); // Output: {i: 1}
+    console.log(vowelCount('Matt')); // Output: {a: 1}
+    console.log(vowelCount('hmmm')); // Output: {}
+    console.log(vowelCount('I Am awesome and so are you')); // Output: {i: 1, a: 4, e: 3, o: 3, u: 1}
+
+</script>
+
+</html>

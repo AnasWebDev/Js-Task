@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anas Yasien</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    function capitalizeNames(arr) {
+        // Use the map() function to capitalize each name
+        const capitalizedArray = arr.map((name) => {
+            // Convert the name to lowercase first
+            const lowerCaseName = name.toLowerCase();
+            // Capitalize the first letter and concatenate the rest of the name
+            return lowerCaseName.charAt(0).toUpperCase() + lowerCaseName.slice(1);
+        });
+
+        // Return the new array with capitalized names
+        return capitalizedArray;
+    }
+
+    // Test case
+    console.log(capitalizeNames(["john", "JACOB", "jinGleHeimer", "schmidt"]));
+// Output: ["John", "Jacob", "Jingleheimer", "Schmidt"]
+
+</script>
+
+</html>

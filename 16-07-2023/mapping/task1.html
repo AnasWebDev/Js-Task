@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anas Yasien</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    function doubleNumbers(arr) {
+        // Create an empty array to store the doubled numbers
+        const doubledArray = [];
+
+        // Iterate through the input array and double each element
+        for (let i = 0; i < arr.length; i++) {
+            const doubledNumber = arr[i] * 2;
+            doubledArray.push(doubledNumber);
+        }
+
+        // Return the new array with doubled numbers
+        return doubledArray;
+    }
+
+    // Test case
+    console.log(doubleNumbers([2, 5, 100])); // Output: [4, 10, 200]
+
+</script>
+
+</html>

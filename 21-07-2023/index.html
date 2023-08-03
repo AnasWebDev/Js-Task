@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Registration Form</h2>
+        <form id="registrationForm">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" required>
+            <br>
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" required>
+            <br>
+            <label for="birthDate">Birth Date:</label>
+            <input type="date" id="birthDate" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <br>
+            <label for="confirmEmail">Confirm Email:</label>
+            <input type="email" id="confirmEmail" required>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+            <br>
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" required>
+            <br>
+            <label for="mobileNumber">Mobile Number:</label>
+            <input type="text" id="mobileNumber" required pattern="[0-9]{10}">
+            <br>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

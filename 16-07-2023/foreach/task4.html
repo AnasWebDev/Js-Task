@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anas Yasien</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    function addKeyAndValue(arr, key, value) {
+        // Use the map() function to add the new key-value pair for each object
+        const modifiedArray = arr.map((obj) => {
+            // Create a new object with the existing properties of the original object
+            const newObj = { ...obj };
+            // Add the new key-value pair to the new object
+            newObj[key] = value;
+            // Return the new object with the new key-value pair
+            return newObj;
+        });
+
+        // Return the modified array with the new key-value pairs
+        return modifiedArray;
+    }
+
+    // Test Case
+    console.log(addKeyAndValue([{ name: 'Elie' }, { name: 'Tim' }, { name: 'Matt' }, { name: 'Colt' }], 'title', 'instructor'));
+// Output: [{ name: 'Elie', title: 'instructor' }, { name: 'Tim', title: 'instructor' }, { name: 'Matt', title: 'instructor' }, { name: 'Colt', title: 'instructor' }]
+
+</script>
+
+</html>

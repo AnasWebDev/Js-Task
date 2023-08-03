@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anas Yasien</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    function showFirstAndLast(arr) {
+        // Use the map() function to get the first and last characters of each string
+        const firstAndLastArray = arr.map((str) => {
+            // If the string has only one character, return the string as it is
+            if (str.length === 1) {
+                return str;
+            }
+            // Otherwise, concatenate the first and last characters
+            return str.charAt(0) + str.charAt(str.length - 1);
+        });
+
+        // Return the new array with first and last characters
+        return firstAndLastArray;
+    }
+
+    // Test Case 1
+    console.log(showFirstAndLast(['colt', 'matt', 'tim', 'udemy']));
+    // Output: ["ct", "mt", "tm", "uy"]
+
+    // Test Case 2
+    console.log(showFirstAndLast(['hi', 'goodbye', 'smile']));
+// Output: ['hi', 'ge', 'se']
+
+</script>
+
+</html>

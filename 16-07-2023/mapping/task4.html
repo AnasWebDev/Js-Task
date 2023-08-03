@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anas Yasien</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    function namesOnly(arr) {
+        // Use the map() function to extract names from each object
+        const namesArray = arr.map((person) => person.name);
+
+        // Return the new array with only names
+        return namesArray;
+    }
+
+    // Test case
+    console.log(namesOnly([
+        {
+            name: "Angelina Jolie",
+            age: 80
+        },
+        {
+            name: "Eric Jones",
+            age: 2
+        },
+        {
+            name: "Paris Hilton",
+            age: 5
+        },
+        {
+            name: "Kayne West",
+            age: 16
+        },
+        {
+            name: "Bob Ziroll",
+            age: 100
+        }
+    ]));
+// Output: ["Angelina Jolie", "Eric Jones", "Paris Hilton", "Kayne West", "Bob Ziroll"]
+
+</script>
+
+</html>
